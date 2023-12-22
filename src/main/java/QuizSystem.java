@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class QuizSystem {
     public static void main(String[] args) throws IOException, ParseException {
         JSONArray userArray = utils.readJsonData("./src/main/resources/user.json");
@@ -64,8 +63,7 @@ public class QuizSystem {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
-
+        
     }
 
     //add question function
@@ -117,8 +115,6 @@ public class QuizSystem {
         fw.flush();
         fw.close();
     }
-
-
 
     // Play quiz function for students
     private static void playQuiz(Scanner scanner) throws IOException, ParseException {

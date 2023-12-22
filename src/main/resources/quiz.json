@@ -1,5 +1,13 @@
 [
   {
+    "answerkey": 2,
+    "option 3": "audits and reviews to be performed",
+    "option 4": "documents to be produced by the SQA group",
+    "question": "Which of the following is not a SQA plan for a project?",
+    "option 1": "evaluations to be performed",
+    "option 2": "amount of technical work"
+  },
+  {
     "answerkey": 4,
     "option 3": "Load Testing",
     "option 4": "Unit Testing",
@@ -14,14 +22,6 @@
     "question": "Which of the following is not included in failure costs?",
     "option 1": "rework",
     "option 2": "repair"
-  },
-  {
-    "answerkey": 2,
-    "option 3": "audits and reviews to be performed",
-    "option 4": "documents to be produced by the SQA group",
-    "question": "Which of the following is not a SQA plan for a project?",
-    "option 1": "evaluations to be performed",
-    "option 2": "amount of technical work"
   },
   {
     "answerkey": 2,
@@ -254,5 +254,29 @@
     "option 1": "sba",
     "option 2": "mna",
     "option 4:": "pra"
+  },
+  {
+    "answerkey": 3,
+    "option 3": "Gorila Testing",
+    "question": "Which is functional testing?",
+    "option 1": "Load Testing",
+    "option 2": "Security Testing",
+    "option 4:": "Benchmark Testing"
+  },
+  {
+    "answerkey": 4,
+    "option 3": "Walkthrough",
+    "question": "Which is not static testing?",
+    "option 1": "Peer review",
+    "option 2": "Inspection",
+    "option 4:": "Exploratory Testing"
+  },
+  {
+    "answerkey": 3,
+    "option 3": "Failure",
+    "question": "A deviation from of actual result from the expected result to the end user is called?",
+    "option 1": "Fault",
+    "option 2": "Bug",
+    "option 4:": "Defect"
   }
 ]

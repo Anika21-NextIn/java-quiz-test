@@ -29,15 +29,15 @@ public class QuizSystem {
 
             for (int i = 0; i < userArray.toArray().length; i++) {
                 JSONObject userObj = (JSONObject) userArray.get(i);
-                String storedRole = (String) userObj.get("role");
-                String storedPass = (String) userObj.get("password");
-                String storedUsername = (String) userObj.get("username");
+                String setRole = (String) userObj.get("role");
+                String setPass = (String) userObj.get("password");
+                String setUsername = (String) userObj.get("username");
 
-//               System.out.println(storedPass);
+//               System.out.println(setPass);
 
-                if (storedUsername.equals(username) && storedPass.equals(password)) {
+                if (setUsername.equals(username) && setPass.equals(password)) {
                     isLoggedIn = true;
-                    role = storedRole;
+                    role = setRole;
                     break;
                 }
 
@@ -63,10 +63,10 @@ public class QuizSystem {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        
+
     }
 
-    //add question function
+    //add question
     private static void addQuestions(Scanner scanner) throws IOException, ParseException {
         String filePath = "./src/main/resources/quiz.json";
         JSONArray questionArray;
@@ -110,13 +110,13 @@ public class QuizSystem {
             }
         }
 
-        FileWriter fw = new FileWriter(filePath);
-        fw.write(String.valueOf(questionArray));
-        fw.flush();
-        fw.close();
+        FileWriter writer = new FileWriter(filePath);
+        writer.write(String.valueOf(questionArray));
+        writer.flush();
+        writer.close();
     }
 
-    // Play quiz function for students
+    // start quiz function
     private static void playQuiz(Scanner scanner) throws IOException, ParseException {
         char ch = 's';
         do {
@@ -139,7 +139,7 @@ public class QuizSystem {
 
                 System.out.print("\nStudent:> ");
                 int answer = scanner.nextInt();
-                scanner.nextLine(); // Consume the newline character
+                scanner.nextLine();
 
                 int answerKey = ((Long) question.get("answerkey")).intValue();
                 if (answer == answerKey) {
@@ -164,10 +164,7 @@ public class QuizSystem {
         }
         while (ch != 'q');
 
-
     }
-
-
 }
 
 

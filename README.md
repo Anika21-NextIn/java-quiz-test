@@ -45,5 +45,5 @@ Java
 * git clone
 * A report will be generate in your project source root
 
-## My project video
+## Project demo video
 [Java_quiz_test_video.webm](https://github.com/Anika21-NextIn/java-quiz-test/assets/55154873/a4645d0e-9656-4237-a76b-eb290dfae1f9)
